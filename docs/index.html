@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <title>Bộ sưu tập ảnh của tôi</title>
+<meta charset="UTF-8">
+<title>Thư viện ảnh và video</title>
+<style>
+  body {
+    font-family: sans-serif;
+    text-align: center;
+    background: #f7f7f7;
+  }
+  h1 {
+    color: #333;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  img, video {
+    width: 300px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ccc;
+  }
+</style>
 </head>
 <body>
-  <h1>Ảnh trong thư mục docs</h1>
-  <img src="anh1.png" width="300">
-  <img src="anh2.jpg" width="300">
+  <h1>Ảnh và video trong thư mục docs</h1>
+  <div class="gallery">
+    <img src="Infographic - Lợi ích của công nghệ số.png" alt="Ảnh 1">
+    <video controls>
+      <source src="video%20lợi%20ích%20công%20nghệ%20%20số.mp4" type="video/mp4">
+      Trình duyệt của bạn không hỗ trợ phát video.
+    </video>
+  </div>
 </body>
 </html>
